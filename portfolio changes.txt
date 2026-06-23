@@ -1,0 +1,33 @@
+Portfolio content — Suvradeb Sengupta
+
+SITE CONFIG (`src/config/site.ts`)
+- CONTACT_EMAIL: sengupta9298@gmail.com
+- CONTACT_PHONE: +353 0894581136
+- LINKEDIN: linkedin.com/in/suvradeb-sengupta-74605b1b8
+- RESUME_PATH: /resume.pdf (public/resume.pdf)
+
+ASSETS
+- Profile photo: public/image.png (LinkedIn profile)
+- Favicon: public/favicon.svg (SS monogram)
+- Company logos: public/cognizant_logo.png, public/qpark_logo.png
+- Resume PDF: public/resume.pdf
+
+HERO
+- Name: Suvradeb Sengupta
+- Title: Software Engineer | Java · Spring Boot · Enterprise Systems
+- CTAs: View Projects, Download Resume
+
+EXPERIENCE
+- Q-Park Dublin — Quality Control Administrator (Oct 2024 – Present)
+- Cognizant Technology Solutions — Software Engineer (Jul 2020 – Aug 2024)
+
+PROJECTS
+- Bilingual History Learning App (UCD)
+- Outreach Event Management App (Cognizant)
+
+EDUCATION
+- MSc Information Systems, UCD (2024–2025)
+- BTech ECE, University of Engineering & Management (2016–2020)
+
+CERTIFICATIONS
+- Google Data Analytics, Google Cloud Ready, JP Morgan SWE, Spring Boot, Hibernate & JPA

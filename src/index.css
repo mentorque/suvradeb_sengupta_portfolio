@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 13% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+
+    /* TCS / SDE blue — review & tweak if needed */
+    --primary: 202 100% 37%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 202 55% 92%;
+    --accent-foreground: 202 100% 22%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 13% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 202 100% 37%;
+
+    --radius: 0.75rem;
+
+    /* Enhanced portfolio colors */
+    --hero-bg: 220 25% 6%;
+    --hero-accent: 142 84% 44%;
+    --nav-bg: 220 25% 8%;
+    --section-bg: 220 13% 98%;
+    --skill-bg: 202 45% 96%;
+    
+    /* Enhanced gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(202 100% 37%), hsl(202 90% 30%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 28% 8%), hsl(202 45% 18%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 13% 98%));
+    --gradient-accent: linear-gradient(120deg, hsl(142 84% 44%), hsl(180 84% 44%));
+    
+    /* Shadow system */
+    --shadow-sm: 0 1px 2px 0 hsl(220 13% 69% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(220 13% 69% / 0.1), 0 2px 4px -1px hsl(220 13% 69% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(220 13% 69% / 0.1), 0 4px 6px -2px hsl(220 13% 69% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(220 13% 69% / 0.1), 0 10px 10px -5px hsl(220 13% 69% / 0.04);
+    --shadow-glow: 0 0 40px hsl(202 100% 37% / 0.18);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 25% 6%;
+    --foreground: 220 13% 98%;
+
+    --card: 220 25% 8%;
+    --card-foreground: 220 13% 98%;
+
+    --popover: 220 25% 8%;
+    --popover-foreground: 220 13% 98%;
+
+    --primary: 202 100% 50%;
+    --primary-foreground: 220 25% 6%;
+
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 13% 98%;
+
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 65%;
+
+    --accent: 142 84% 54%;
+    --accent-foreground: 220 25% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 13% 98%;
+
+    --border: 220 13% 15%;
+    --input: 220 13% 15%;
+    --ring: 202 100% 50%;
+
+    /* Dark mode portfolio colors */
+    --hero-bg: 220 25% 6%;
+    --hero-accent: 142 84% 54%;
+    --nav-bg: 220 25% 8%;
+    --section-bg: 220 25% 8%;
+    --skill-bg: 220 13% 12%;
+    --gradient-primary: linear-gradient(135deg, hsl(250 84% 64%), hsl(142 84% 54%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 6%), hsl(250 84% 15%));
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 8%), hsl(220 13% 12%));
+    --shadow-glow: 0 0 40px hsl(250 84% 64% / 0.2);
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-space-grotesk;
+  }
+}
+
+/* Hero name gradient — cyan → purple like Experience heading */
+.hero-name-gradient {
+  background: linear-gradient(90deg, #22d3ee 0%, #3b82f6 45%, #a855f7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Live hero background orbs */
+.hero-live-orbs {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(34, 211, 238, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(168, 85, 247, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 30% at 50% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+  animation: orb-drift 12s ease-in-out infinite alternate;
+}
+
+@keyframes orb-drift {
+  0% { transform: scale(1) translate(0, 0); opacity: 0.8; }
+  100% { transform: scale(1.08) translate(2%, -2%); opacity: 1; }
+}
+
+.hero-profile-frame {
+  animation: profile-glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes profile-glow {
+  0% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.25); }
+  100% { box-shadow: 0 0 40px rgba(168, 85, 247, 0.35); }
+}
+
+/* Nav item pop on hover */
+.nav-item-pop:active {
+  transform: scale(0.95);
+}
+
+/* Key achievement award icons — cycling colours */
+.achievement-icon {
+  @apply w-12 h-12 rounded-xl flex items-center justify-center relative overflow-hidden transition-all duration-500;
+  animation: achievement-shift 6s ease-in-out infinite;
+}
+
+.achievement-icon-cyan { background: linear-gradient(135deg, #0891b2, #06b6d4); }
+.achievement-icon-blue { background: linear-gradient(135deg, #2563eb, #3b82f6); animation-delay: -1.5s; }
+.achievement-icon-purple { background: linear-gradient(135deg, #7c3aed, #a855f7); animation-delay: -3s; }
+.achievement-icon-pink { background: linear-gradient(135deg, #db2777, #ec4899); animation-delay: -4.5s; }
+
+@keyframes achievement-shift {
+  0%, 100% { filter: hue-rotate(0deg) brightness(1); }
+  50% { filter: hue-rotate(25deg) brightness(1.1); }
+}
+
+.achievement-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.25) 50%, transparent 70%);
+  transform: translateX(-100%);
+  animation: achievement-shine 3s ease-in-out infinite;
+}
+
+@keyframes achievement-shine {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+}
+
+/* Sparkle + film grain overlay on hero */
+.hero-sparkle-grain {
+  mix-blend-mode: screen;
+}
+
+.hero-film-grain {
+  position: absolute;
+  inset: -100%;
+  width: 300%;
+  height: 300%;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain-drift 8s steps(8) infinite;
+}
+
+@keyframes grain-drift {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-2%, -3%); }
+  50% { transform: translate(3%, 1%); }
+  75% { transform: translate(-1%, 4%); }
+  100% { transform: translate(2%, -2%); }
+}
