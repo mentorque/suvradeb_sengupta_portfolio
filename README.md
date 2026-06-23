@@ -1,16 +1,21 @@
-# Portfolio Template — Classic
+# Suvradeb Sengupta — Portfolio
 
-Clean, professional portfolio with hero section, skills grid, experience cards, projects, and contact.
+Personal portfolio site for **Suvradeb Sengupta**, Software Engineer based in Dublin, Ireland.
 
-Works for any role — replace all placeholder text and assets with your own content.
+## Features
+
+- Dark theme with live hero background, particles, sparkles, and film grain
+- Profile, experience (Q-Park, Cognizant), projects, education, certifications
+- Downloadable resume and LinkedIn contact links
 
 ## Customize
 
 | What | Where |
 |------|-------|
-| Contact email | `src/config/site.ts` |
-| Resume | `public/resume.pdf` |
-| Profile & project images | `public/placeholder.svg` |
+| Contact & links | `src/config/site.ts` |
+| Resume PDF | `public/resume.pdf` |
+| Profile photo | `public/image.png` |
+| Project GitHub URLs | `PROJECT_GITHUB` in `src/config/site.ts` |
 
 ## Run locally
 
@@ -18,3 +23,13 @@ Works for any role — replace all placeholder text and assets with your own con
 npm i
 npm run dev
 ```
+
+## Build
+
+```sh
+npm run build
+```
+
+## Deploy
+
+Configured for Netlify via `netlify.toml`.
