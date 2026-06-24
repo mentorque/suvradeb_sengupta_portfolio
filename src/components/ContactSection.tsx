@@ -16,7 +16,7 @@ const ContactSection = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-3">Contact</h2>
             <div className="w-16 h-px bg-[hsl(var(--primary))] mx-auto mb-5" />
-            <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">Open to software engineering roles in Dublin and across Ireland. No sponsorship required.</p>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">Seeking a full-time software engineering role in Dublin and across Ireland.</p>
           </div>
           <div className="max-w-3xl mx-auto grid sm:grid-cols-3 gap-5">
             {links.map((item) => (

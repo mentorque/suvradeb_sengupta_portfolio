@@ -1,13 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Mail, Linkedin, GraduationCap, Calendar, Globe, Award, Phone } from "lucide-react";
+import { MapPin, Mail, Linkedin, GraduationCap, Calendar, Briefcase, Award, Phone } from "lucide-react";
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF, LINKEDIN_URL, LINKEDIN_DISPLAY, LOCATION } from "@/config/site";
 
 const AboutSection = () => {
   const quickFacts = [
     { icon: MapPin, label: "Location", value: LOCATION },
-    { icon: GraduationCap, label: "Education", value: "MSc Information Systems, UCD" },
+    { icon: GraduationCap, label: "Education", value: "MSc Information Systems, UCD (completing)" },
     { icon: Calendar, label: "Experience", value: "4+ years" },
-    { icon: Globe, label: "Work Authorisation", value: "No sponsorship required" },
+    { icon: Briefcase, label: "Status", value: "Seeking full-time role in Ireland" },
   ];
 
   const contactInfo = [
@@ -27,20 +27,13 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-5 text-base text-muted-foreground leading-relaxed">
               <p>
-                I am a Software Engineer with 4+ years of experience building and maintaining Java/Spring Boot
-                enterprise-grade applications in a US-based insurance domain. Now based in Dublin, having completed
-                my MSc in Information Systems at UCD, I also work part-time at Q-Park Dublin Street Parking Services.
+                Software Engineer with 4+ years of experience building and scaling high-availability Java/Spring Boot
+                enterprise applications. Proven expertise in end-to-end system ownership, legacy code stabilization,
+                and rapid resolution of critical production defects.
               </p>
               <p>
-                I was responsible for maintaining 99.9% system uptime, resolving 50+ critical outages with a 100%
-                resolution rate, and cutting recurring fault rates by 35%. What sets me apart is the discipline to own
-                a system end-to-end under pressure — debugging what others avoid, finding the root cause of critical
-                defects instead of patching the symptom, and making sure the same failure does not happen twice.
-              </p>
-              <p>
-                I am an exceptionally hard-working professional, and I want to bring to the Irish tech market my
-                expertise to solve real challenges, interpersonal skills, and technical depth — and become an integral
-                part of the team.
+                Currently completing an MSc in Information Systems at UCD and seeking a full-time role to deliver
+                robust, scalable software solutions within the Irish tech sector.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
                 {contactInfo.map((contact, index) => (

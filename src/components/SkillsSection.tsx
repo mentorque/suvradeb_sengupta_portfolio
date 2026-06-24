@@ -5,19 +5,27 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Languages & Frameworks",
-      skills: ["Java (Core + Advanced)", "J2EE", "Spring Boot", "Spring MVC", "REST APIs", "Hibernate"],
+      skills: ["Java (Core + Advanced)", "J2EE", "Spring Boot", "Spring MVC", "Spring IOC", "REST APIs", "Hibernate"],
     },
     {
-      title: "Architecture & Design",
-      skills: ["OOP", "SOLID Principles", "Design Patterns", "TDD", "BDD"],
+      title: "Testing & Quality",
+      skills: ["JUnit", "Mockito", "Unit & Integration Testing", "Test-Driven Development", "Behavior-Driven Development"],
     },
     {
-      title: "Testing & Databases",
-      skills: ["JUnit", "Mockito", "Integration Testing", "MySQL", "Oracle SQL"],
+      title: "Databases",
+      skills: ["MySQL", "Oracle SQL"],
     },
     {
       title: "DevOps & Tools",
-      skills: ["CI/CD", "Git", "Maven", "Jenkins", "IntelliJ IDEA", "Postman", "Sonar", "Agile/Scrum"],
+      skills: ["CI/CD Pipelines", "Git", "Maven", "Jenkins", "IntelliJ IDEA", "Apache Tomcat", "Postman", "SonarQube"],
+    },
+    {
+      title: "Architecture & Design",
+      skills: ["Object-Oriented Design (OOP)", "SOLID Principles", "Design Patterns"],
+    },
+    {
+      title: "Methodologies",
+      skills: ["Agile (Scrum)", "SDLC", "JSON/XML", "Root Cause Analysis"],
     },
   ];
 
@@ -29,7 +37,7 @@ const SkillsSection = () => {
             <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-3">Skills</h2>
             <div className="w-16 h-px bg-[hsl(var(--primary))] mx-auto mb-5" />
             <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Production systems ownership, performance optimisation, legacy stabilisation, and technical leadership under pressure.
+              End-to-end system ownership, legacy code stabilization, and high-availability enterprise development.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">

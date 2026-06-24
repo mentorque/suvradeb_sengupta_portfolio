@@ -3,6 +3,7 @@ Portfolio content — Suvradeb Sengupta
 SITE CONFIG (`src/config/site.ts`)
 - CONTACT_EMAIL: sengupta9298@gmail.com
 - CONTACT_PHONE: +353 0894581136
+- LOCATION: 37 The Drive, St Marnocks Bay, Portmarnock, Dublin
 - LINKEDIN: linkedin.com/in/suvradeb-sengupta-74605b1b8
 - RESUME_PATH: /resume.pdf (public/resume.pdf)
 
@@ -18,7 +19,7 @@ HERO
 - CTAs: View Projects, Download Resume
 
 EXPERIENCE
-- Q-Park Dublin — Quality Control Administrator (Oct 2024 – Present)
+- Q-Park — Quality Control Administrator (Oct 2024 – Present)
 - Cognizant Technology Solutions — Software Engineer (Jul 2020 – Aug 2024)
 
 PROJECTS
@@ -26,8 +27,8 @@ PROJECTS
 - Outreach Event Management App (Cognizant)
 
 EDUCATION
-- MSc Information Systems, UCD (2024–2025)
-- BTech ECE, University of Engineering & Management (2016–2020)
+- MSc Information Systems, UCD (Sep 2024 – Sep 2025)
+- BTech ECE, University of Engineering & Management (Jul 2016 – May 2020)
 
 CERTIFICATIONS
-- Google Data Analytics, Google Cloud Ready, JP Morgan SWE, Spring Boot, Hibernate & JPA
+- Certified Data Analytics (Google), Google Cloud Ready, JP Morgan SWE, Spring Boot (Udemy), Hibernate & JPA (Udemy)

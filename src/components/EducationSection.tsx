@@ -10,12 +10,16 @@ const EducationSection = () => {
       dates: "Sep 2024 – Sep 2025",
       location: "Dublin, Ireland",
       coursework: [
-        "Applied Data Wrangling & Visualisation",
+        "Informatics",
+        "Data & Society",
+        "Applied Data Wrangling and Visualisation",
         "Quantitative Data Analytics",
+        "Language Models and Methods",
         "Interactive Dashboards",
-        "Machine Learning Foundations",
-        "AI Ethics & Auditing",
+        "Python",
         "Project Management",
+        "AI Ethics & Auditing",
+        "Machine Learning Foundations",
       ],
     },
     {
@@ -24,21 +28,22 @@ const EducationSection = () => {
       dates: "Jul 2016 – May 2020",
       location: "Kolkata, India",
       coursework: [
+        "Engineering Mathematics",
+        "Physics",
         "Computer Programming",
         "Computer Organisation & Architecture",
         "Database Management Systems",
         "Data Science & Data Analytics",
-        "Engineering Mathematics",
       ],
     },
   ];
 
   const certifications = [
-    "Google Certified Data Analytics",
+    "Certified Data Analytics, Google",
     "Google Cloud Ready Facilitator Program",
-    "JP Morgan Chase & Co. Software Engineering Virtual Experience",
-    "Spring Boot — Udemy Certified",
-    "Hibernate & JPA — Udemy Certified",
+    "Software Engineering Virtual Experience, JP Morgan Chase and Co.",
+    "Spring Boot certified, Udemy",
+    "Hibernate & JPA certified, Udemy",
   ];
 
   return (

@@ -50,8 +50,8 @@ const HeroSection = () => {
             </p>
 
             <p className="text-base md:text-lg text-white/75 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-slide-up">
-              4+ years building and maintaining Java/Spring Boot enterprise applications in insurance.
-              Based in Dublin — I own systems end-to-end, debug what others avoid, and make sure the same failure never happens twice.
+              4+ years building and scaling high-availability Java/Spring Boot enterprise applications.
+              End-to-end system ownership, legacy stabilization, and rapid production defect resolution — completing MSc at UCD and seeking a full-time role in Ireland.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start animate-slide-up" style={{ animationDelay: "0.15s" }}>

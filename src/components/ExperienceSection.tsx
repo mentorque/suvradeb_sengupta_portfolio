@@ -6,16 +6,16 @@ import { Building2, Calendar, MapPin, TrendingUp } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: "Q-Park Dublin",
+      company: "Q-Park",
       position: "Quality Control Administrator",
       location: "Dublin, Ireland",
       duration: "Oct 2024 – Present",
       logoSrc: "/qpark_logo.png",
       logoAlt: "Q-Park",
       achievements: [
-        { impact: "98%+ processing accuracy", description: "Audited 4,000+ monthly customer transactions through an internal CRM system, directly reducing downstream operational errors and customer escalations." },
-        { impact: "20% faster issue resolution", description: "Investigated and resolved 100+ monthly system-related issues — payment discrepancies and account processing errors — through root cause analysis." },
-        { impact: "Compliance & quality standards", description: "Maintained an appeals tracker, preparing appeal packs and ensuring all case documentation met quality and compliance standards." },
+        { impact: "98%+ processing accuracy", description: "Audited over 4000 monthly CRM transactions with 98%+ accuracy, significantly reducing operational errors and customer escalations." },
+        { impact: "20% faster issue resolution", description: "Resolved more than 100 monthly system issues including payment and account errors, cutting resolution time by 20% through root cause analysis and process improvements." },
+        { impact: "Compliance & quality standards", description: "Maintained an appeals tracker and prepared all case documentation to meet quality and compliance standards." },
       ],
       technologies: ["CRM Systems", "Data Auditing", "Root Cause Analysis", "Customer Operations", "Compliance"],
     },
@@ -27,11 +27,12 @@ const ExperienceSection = () => {
       logoSrc: "/cognizant_logo.png",
       logoAlt: "Cognizant",
       achievements: [
-        { impact: "99.9% uptime at scale", description: "Built and shipped Java/Spring Boot services for the Exigen Insurance Suite (EIS), processing 200K+ API requests/day for 15K+ users with feature consistency and data integrity." },
-        { impact: "100% P1 resolution rate", description: "Led the team as first-call engineer for production incidents — resolved 20+ P1 outages and cut recurring fault rate by 35% through root cause analysis, not symptom patching." },
-        { impact: "92%+ test coverage", description: "Improved test coverage of EIS legacy modules with 100+ automated tests (JUnit/Mockito) from scratch and introduced TDD/BDD team-wide, reducing production defects by 30%." },
-        { impact: "25% faster response times", description: "Resolved bottlenecks across service and database layers in underwriting workflows, improving response times by 25% and sustaining 98%+ release delivery via CI/CD (Jenkins, Maven, Sonar)." },
-        { impact: "25+ batch jobs delivered", description: "Developed triggered batch jobs using Java and Spring Batch for policy renewals, mid-term endorsements, form data updates, and bulk Oracle SQL query execution." },
+        { impact: "99.9% uptime at scale", description: "Built and maintained Java/Spring Boot services for Exigen Insurance Suite, processing 200K+ daily API requests at 99.9% uptime for 15K+ users, ensuring data integrity and feature consistency across modules." },
+        { impact: "100% P1 resolution rate", description: "Led production incident response, resolving over 20 P1 outages with 100% resolution rate and reducing recurring faults by 35% through root cause analysis and preventive measures." },
+        { impact: "25+ batch jobs delivered", description: "Developed 25+ batch jobs using Java and Spring Batch automating policy renewals, mid-term endorsements, form data updates, and bulk Oracle SQL testing workflows to streamline operations and improve efficiency." },
+        { impact: "92%+ test coverage", description: "Raised legacy module test coverage above 92% with 100+ JUnit/Mockito tests, introducing TDD and BDD practices that reduced defects by 30% and improved code quality across the platform." },
+        { impact: "25% faster response times", description: "Resolved service and database bottlenecks, improving response times by 25% and enabling 98%+ on-time releases through CI/CD pipeline optimizations using Jenkins, Maven, and Sonar." },
+        { impact: "100+ production releases", description: "Led code reviews enforcing SOLID and secure coding standards, mentoring junior engineers and sustaining quality across 100+ production releases with consistent best practices." },
       ],
       technologies: ["Java", "Spring Boot", "Spring Batch", "REST APIs", "Hibernate", "Oracle SQL", "JUnit", "Mockito", "Jenkins", "Maven", "Sonar"],
     },
